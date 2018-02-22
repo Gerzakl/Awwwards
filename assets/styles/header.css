@@ -49,7 +49,7 @@ header .container{
 	height: 2px;
 	width: 22px;
 	background-color: #565656;
-	transform: rotate(-60deg);
+	transform: rotate(60deg);
 }
 
 .mobile-togglerX i:nth-child(2){
@@ -57,7 +57,7 @@ header .container{
 	height: 2px;
 	width: 22px;
 	background-color: #565656;
-	transform: rotate(60deg);
+	transform: rotate(-60deg);
 }
 
 .mobile-toggler i:last-child,
@@ -100,4 +100,37 @@ header .container{
 	display: block;
 }
 
+.header-desktop{
+	display: none;
+}
 
+.header-mobile{
+	display: block;
+}
+
+
+@media screen and (min-width: 600px){
+		
+		.header-desktop{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;	
+		}
+
+		.header-mobile{
+			display: none;
+		}
+
+		header .container{
+			justify-content: flex-start;
+		}
+
+		.header-logo{
+			margin-right: 30px;
+		}
+
+		.header-links a{
+			margin-right: 15px;
+		}
+
+}

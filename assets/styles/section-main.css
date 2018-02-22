@@ -1,0 +1,31 @@
+.section-main{
+	height: calc(100vh - 60px);
+	display: flex;
+	align-items: center;	
+}
+
+.main-content{
+	padding: 0 20px;
+}
+
+h1.-fromAbove{
+	transform: translateY(-100%);
+	transition: .3s ease-out;
+}
+
+h2.-fromBeyond{
+	transform: translateY(100%);
+	transition: .5s ease-out;
+}
+
+.title, .subtitle{
+	overflow: hidden;
+}
+
+h1.-animated, h2.-animated{
+	transform: translateY(0);
+}
+
+@media  screen and () {
+	
+}
