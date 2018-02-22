@@ -28,6 +28,14 @@ header .container{
 	z-index: 2;
 }
 
+.mobile-togglerX{
+	display: none;
+	position: relative;
+	height: 22px;
+	width: 25px;
+	z-index: 2;
+}
+
 .mobile-toggler i{
 	display: block;
 	margin-bottom: 8px;
@@ -36,7 +44,24 @@ header .container{
 	background-color: #565656;
 }
 
-.mobile-toggler i:last-child{
+.mobile-togglerX i:nth-child(1){
+	display: block;
+	height: 2px;
+	width: 22px;
+	background-color: #565656;
+	transform: rotate(-60deg);
+}
+
+.mobile-togglerX i:nth-child(2){
+	display: block;
+	height: 2px;
+	width: 22px;
+	background-color: #565656;
+	transform: rotate(60deg);
+}
+
+.mobile-toggler i:last-child,
+.mobile-togglerX i:last-child{
 	margin-bottom: 0;
 }
 
@@ -67,17 +92,12 @@ header .container{
 	transform: translateX(0);
 }
 
-.header-mobile.-open .mobile-menu i:first-child{
-	transform: rotate(-60deg);
-}
-
-.header-mobile.-open .mobile-menu i:nth-child(2){
+.header-mobile.-Xvisible .mobile-toggler{
 	display: none;
 }
 
-.header-mobile.-open .mobile-menu i:last-child{
-	transform: rotate(60deg);
+.header-mobile.-Xvisible .mobile-togglerX{
+	display: block;
 }
-
 
 
