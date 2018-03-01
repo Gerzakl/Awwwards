@@ -36,7 +36,6 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
   width: 100%;
   background-color: #dedbee;
   background-image: url("");
