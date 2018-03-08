@@ -22,18 +22,24 @@ $(document).ready(function(){
 	$('.mobile-toggler-js').click(function() {
 		headerMobile.addClass('-open');
 		headerMobile.addClass('-Xvisible');
+		for (let i = 0; i < modalElems.length; i++) {
+				let timeToWait = i * 200;
+				setTimeout(function() {
+				$(modalElems[i]).removeClass('-active');
+			}, 200 + timeToWait);
+		}		
+		modal.removeClass('-active');
 	})
 
-	$('.mobile-togglerX-js') || modalTogglerMobile.click(function(){
+	$('.mobile-togglerX-js').click(function(){
 		headerMobile.removeClass('-open');
 		headerMobile.removeClass('-Xvisible');
 	})
 
-	// modalTogglerMobile.click(function() {
-	// 	headerMobile.removeClass('-open');
-	// 	headerMobile.removeClass('-Xvisible');
-	// })
-
+	modalTogglerMobile.click(function() {
+		headerMobile.removeClass('-open');
+		headerMobile.removeClass('-Xvisible');
+	});
 
 	setTimeout(function(){
 		$('h1').addClass('-animated');
