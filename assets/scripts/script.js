@@ -5,6 +5,7 @@ $(document).ready(function(){
 	let modalToggler = $('.js-modal-toggler'),
 		modal = $('.modal'),
 		headerMobile = $('.header-mobile'),
+		modalTogglerMobile = $('.js-modal-toggler-mobile'),
 		modalElems = [
 			'.js-modal-github',
 			'.js-modal-vk',
@@ -23,10 +24,16 @@ $(document).ready(function(){
 		headerMobile.addClass('-Xvisible');
 	})
 
-	$('.mobile-togglerX-js').click(function() {
+	$('.mobile-togglerX-js') || modalTogglerMobile.click(function(){
 		headerMobile.removeClass('-open');
 		headerMobile.removeClass('-Xvisible');
 	})
+
+	// modalTogglerMobile.click(function() {
+	// 	headerMobile.removeClass('-open');
+	// 	headerMobile.removeClass('-Xvisible');
+	// })
+
 
 	setTimeout(function(){
 		$('h1').addClass('-animated');
@@ -42,5 +49,7 @@ $(document).ready(function(){
 			}, 200 + timeToWait);
 		}
 	});
+
+
 
 });

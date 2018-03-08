@@ -3,7 +3,7 @@
 	top: 200px;
 	left: 10px;
 	width: calc(100% - 20px); 
-	max-width: 600px;
+	max-width: 400px;
 	height: 0;
 	background-color: #ffffff;
 	overflow: hidden;
@@ -84,6 +84,7 @@
 	.modal{
 		top: 40%;
 		left: auto;
+		max-width: 600px;
 		right: 5%;
 		transform: translateY(-50%);
 	}
