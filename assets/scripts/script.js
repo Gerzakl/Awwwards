@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+  	$(".owl-carousel").owlCarousel({
+  		items:"1",
+  		autoHeight: "true",
+  		autoPlay: "true",
+  		autoplayTimeout: "1000"
+  	});
+
 	let random = Math.floor(Math.random() * (5 - 1) + 1);
 
 	let modalToggler = $('.js-modal-toggler'),
@@ -55,7 +62,5 @@ $(document).ready(function(){
 			}, 200 + timeToWait);
 		}
 	});
-
-
 
 });

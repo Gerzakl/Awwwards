@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Nick-web</title>
-		
+		<link rel="stylesheet" href="assets/styles/vender/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/styles/vender/owl.theme.default.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/fonts.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 		
@@ -12,12 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="assets/styles/container.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/section-main.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/modal.css">
-		<link rel="stylesheet" type="text/css" href="assets/styles/section-about.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/section-portfolio.css">
 
 		<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+		
+
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="viewport" content="width=device-width initial-scale=1">	
 	</head>
 	<body>
 		<header>
@@ -86,9 +89,26 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-about">
+		<section class="section-portfolio">
 			<div class="container">
-			 	<div class="example" data-aos="fade-up"></div>
+				<div class="portfolio">
+					<div class="portfolio-info">
+						<h2 class="portfolio-title">Title is ours</h2>
+						<p class="portfolio-desk">За Лордерон</p>
+						<button class="portfolio-btn">More</button>
+					</div>
+					<div class=" owl-carousel portfolio-gallery">
+						<div class="gallery-item">
+							<img src="assets/images/slide-1.jpg">
+						</div>
+						<div class="gallery-item">
+							<img src="assets/images/slide-2.jpg">
+						</div>
+						<div class="gallery-item">
+							<img src="assets/images/slide-3.jpg">
+						</div>
+					</div>
+				</div>
 		    </div>
 		</section>
 		<script
@@ -96,6 +116,7 @@
   			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   			crossorigin="anonymous">
   		</script> 
+  		<script src="assets/scripts/lib/owl.carousel.min.js"></script>
   		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script type="text/javascript" src="assets/scripts/script.js"></script>
 		<script type="text/javascript" src="assets/scripts/lib/particles.min.js"></script>
