@@ -1,10 +1,18 @@
 $(document).ready(function(){
 
   	$(".owl-carousel").owlCarousel({
-  		items:"1",
-  		autoHeight: "true",
-  		autoPlay: "true",
-  		autoplayTimeout: "1000"
+  		items: 1,
+  		autoHeight: true,
+  		autoPlay: true,
+  		autoplayTimeout: 1000,
+  		nav: true
+  	});
+
+  	AOS.init({
+  		offset: 200, 
+		duration: 800, 
+		easing: 'ease-in-sine', 
+		delay: 300,
   	});
 
 	let random = Math.floor(Math.random() * (5 - 1) + 1);
@@ -61,6 +69,10 @@ $(document).ready(function(){
 				$(modalElems[i]).toggleClass('-active');
 			}, 200 + timeToWait);
 		}
+	});
+
+	$('.scroll p').click(function(){
+		 $('html, body').animate({ scrollTop: $('.section-portfolio').offset().top }, 500);
 	});
 
 });

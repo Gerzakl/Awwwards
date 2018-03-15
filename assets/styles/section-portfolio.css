@@ -25,7 +25,7 @@
 
 .portfolio-btn{
 	padding: 20px;
-	background-color: #f4f4f4;
+	background-color: #dedbee;
 	border: none;
 	width: 100%;
 	text-transform: uppercase;
@@ -33,11 +33,59 @@
 
 .gallery-item {
 	width: 100%;
+	margin-right: 15px;
 	height: 450px;
 }
 
 .gallery-item img{
 	max-width: 100%;
+}
+
+.portfolio-gallery{
+	position: relative;
+}
+
+.owl-prev,
+.owl-next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: transparent;
+	transition: .4s;
+}
+
+.owl-next {
+	right: 0;
+}
+
+.owl-prev{
+	left: 0;
+}
+
+.owl-next:before,
+.owl-prev:before{
+	position: absolute;
+	display: block;
+	content: "";
+	right: 30px;
+	width: 15px;
+	height: 15px;
+	border-right: 5px solid white;
+	border-bottom: 5px solid white;
+	transform: rotate(-45deg);
+	transition: .4s;
+}
+
+.owl-prev:before{
+	left: 30px;
+	transform: rotate(135deg);
+
+}
+
+.owl-next:hover:before,
+.owl-prev:hover:before{
+	border-right: 20px solid white;	
+	border-bottom: 20px solid white;
 }
 
 @media screen and (min-width: 768px){
@@ -56,7 +104,7 @@
 
 	.portfolio-info{
 		width: 35%;
-		background-color: #dedbee;
+		background-color: #f4f4f4;
 		height: 400px;
 		display: flex;
 		flex-direction: column;
@@ -70,14 +118,11 @@
 	}
 }
 
+
 @media screen and (min-width: 1024px){
 
-	.container{
+	.section-portfolio .container{
 		width: 1024px;
-	}
-
-	.portfolio-gallery{
-		height: 450px;
 	}
 
 	.portfolio-gallery img{

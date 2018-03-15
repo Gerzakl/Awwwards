@@ -26,6 +26,38 @@ h1.-animated, h2.-animated{
 	transform: translateY(0);
 }
 
+.scroll{
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+} 
+
+.scroll p{
+	position: relative;
+	color: white;
+	cursor: pointer;
+}
+
+.scroll p:before{
+	position: absolute;
+	display: block;
+	content: "";
+	bottom: -20px;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg);
+	transition: .4s;
+}
+
+.scroll p:hover:before{
+	bottom: -30px;
+	border-right: 3px solid white;
+	border-bottom: 3px solid white;	
+}
 
 canvas {
   position: absolute;
